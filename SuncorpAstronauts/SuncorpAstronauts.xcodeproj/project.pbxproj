@@ -15,6 +15,7 @@
 		58EA61DD2672061200FAF3CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58EA61DB2672061200FAF3CE /* LaunchScreen.storyboard */; };
 		58EA61E82672061300FAF3CE /* SuncorpAstronautsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EA61E72672061300FAF3CE /* SuncorpAstronautsTests.swift */; };
 		58EA61F32672061300FAF3CE /* SuncorpAstronautsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EA61F22672061300FAF3CE /* SuncorpAstronautsUITests.swift */; };
+		58EA620226720B5500FAF3CE /* AstronautCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EA620126720B5500FAF3CE /* AstronautCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		58EA61EE2672061300FAF3CE /* SuncorpAstronautsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SuncorpAstronautsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		58EA61F22672061300FAF3CE /* SuncorpAstronautsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuncorpAstronautsUITests.swift; sourceTree = "<group>"; };
 		58EA61F42672061300FAF3CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58EA620126720B5500FAF3CE /* AstronautCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronautCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		58EA61CF2672061000FAF3CE /* SuncorpAstronauts */ = {
 			isa = PBXGroup;
 			children = (
+				58EA620026720B1800FAF3CE /* CustomCells */,
 				58EA61D02672061000FAF3CE /* AppDelegate.swift */,
 				58EA61D22672061000FAF3CE /* SceneDelegate.swift */,
 				58EA61D42672061000FAF3CE /* ViewController.swift */,
@@ -126,6 +129,14 @@
 				58EA61F42672061300FAF3CE /* Info.plist */,
 			);
 			path = SuncorpAstronautsUITests;
+			sourceTree = "<group>";
+		};
+		58EA620026720B1800FAF3CE /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				58EA620126720B5500FAF3CE /* AstronautCell.swift */,
+			);
+			path = CustomCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +272,7 @@
 				58EA61D52672061000FAF3CE /* ViewController.swift in Sources */,
 				58EA61D12672061000FAF3CE /* AppDelegate.swift in Sources */,
 				58EA61D32672061000FAF3CE /* SceneDelegate.swift in Sources */,
+				58EA620226720B5500FAF3CE /* AstronautCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
