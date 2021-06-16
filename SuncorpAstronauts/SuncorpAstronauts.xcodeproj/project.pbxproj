@@ -16,6 +16,7 @@
 		58EA61E82672061300FAF3CE /* SuncorpAstronautsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EA61E72672061300FAF3CE /* SuncorpAstronautsTests.swift */; };
 		58EA61F32672061300FAF3CE /* SuncorpAstronautsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EA61F22672061300FAF3CE /* SuncorpAstronautsUITests.swift */; };
 		58EA620226720B5500FAF3CE /* AstronautCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EA620126720B5500FAF3CE /* AstronautCell.swift */; };
+		58EA62052672155D00FAF3CE /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EA62042672155C00FAF3CE /* ServiceManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		58EA61F22672061300FAF3CE /* SuncorpAstronautsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuncorpAstronautsUITests.swift; sourceTree = "<group>"; };
 		58EA61F42672061300FAF3CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		58EA620126720B5500FAF3CE /* AstronautCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronautCell.swift; sourceTree = "<group>"; };
+		58EA62042672155C00FAF3CE /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		58EA61CF2672061000FAF3CE /* SuncorpAstronauts */ = {
 			isa = PBXGroup;
 			children = (
+				58EA62032672152400FAF3CE /* ServiceManager */,
 				58EA620026720B1800FAF3CE /* CustomCells */,
 				58EA61D02672061000FAF3CE /* AppDelegate.swift */,
 				58EA61D22672061000FAF3CE /* SceneDelegate.swift */,
@@ -137,6 +140,14 @@
 				58EA620126720B5500FAF3CE /* AstronautCell.swift */,
 			);
 			path = CustomCells;
+			sourceTree = "<group>";
+		};
+		58EA62032672152400FAF3CE /* ServiceManager */ = {
+			isa = PBXGroup;
+			children = (
+				58EA62042672155C00FAF3CE /* ServiceManager.swift */,
+			);
+			path = ServiceManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,6 +284,7 @@
 				58EA61D12672061000FAF3CE /* AppDelegate.swift in Sources */,
 				58EA61D32672061000FAF3CE /* SceneDelegate.swift in Sources */,
 				58EA620226720B5500FAF3CE /* AstronautCell.swift in Sources */,
+				58EA62052672155D00FAF3CE /* ServiceManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

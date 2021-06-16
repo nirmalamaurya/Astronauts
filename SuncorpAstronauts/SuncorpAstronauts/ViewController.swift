@@ -14,6 +14,9 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        ServiceManager.sharedInstance.getAstronaunts {
+            
+        }
         // Do any additional setup after loading the view.
     }
 }
