@@ -98,9 +98,9 @@ extension AstronautDetailViewController : ViewDisplayer{
             return
     }
         astronautName.text = astronaut.name
-        astronautName.text = astronaut.nationality
-        astronautName.text = astronaut.bio
-        astronautName.text = astronaut.date_of_birth
+        astronautNationality.text = astronaut.nationality
+        astronautDOB.text = astronaut.bio
+        astronautBio.text = astronaut.date_of_birth
         if let url = astronaut.makeImageUrl(){
         let image = UIImage(named: "placeholder")
         astronautImageView.sd_setImage(with: url, placeholderImage: image)
