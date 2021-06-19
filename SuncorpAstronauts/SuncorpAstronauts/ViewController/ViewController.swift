@@ -24,8 +24,8 @@ class ViewController: UIViewController{
     
     func setUpViewModel(){
         
-        astronauListViewModel = AstronautListViewModel(displayer: self, requestHandler: ServiceManager())
-        astronauListViewModel?.fetchData(for: .list)
+        astronauListViewModel = AstronautListViewModel(displayer: self, requestHandler: ServiceManager(urlType: .list))
+        astronauListViewModel?.fetchData()
     }
     
     func setupProgressView() {

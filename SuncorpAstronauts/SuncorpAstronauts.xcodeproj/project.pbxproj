@@ -207,6 +207,7 @@
 		580C8A23267DECD90017256C /* SceneDelegate */ = {
 			isa = PBXGroup;
 			children = (
+				58EA61D22672061000FAF3CE /* SceneDelegate.swift */,
 			);
 			path = SceneDelegate;
 			sourceTree = "<group>";
@@ -236,7 +237,6 @@
 		58EA61CF2672061000FAF3CE /* SuncorpAstronauts */ = {
 			isa = PBXGroup;
 			children = (
-				58EA61D22672061000FAF3CE /* SceneDelegate.swift */,
 				580C8A23267DECD90017256C /* SceneDelegate */,
 				580C8A22267DECB30017256C /* AppDelegate */,
 				580C8A21267DEC990017256C /* ViewController */,

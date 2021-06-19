@@ -25,12 +25,18 @@ protocol RequestHandler {
     func getAstronauts( successHandler : @escaping successHandler, errorHandler : @escaping errorHandler )
 }
 
-enum AstonautEnum: String {
+enum AstronautUrlType: String {
     case list = ""
     case detail = "id"
 }
 
 struct ServiceManager : ConnectionProvider, RequestHandler {
+    
+    let urlType : AstronautUrlType
+    
+    init(urlType: AstronautUrlType){
+        self.urlType = urlType
+         }
     
     var neworkAvailable : Bool{
         get{
@@ -47,7 +53,6 @@ struct ServiceManager : ConnectionProvider, RequestHandler {
             } errorHandler: { error in
                 errorHandler(.badUrl)
             }
-
         }
         else{
             errorHandler(.networkError)
@@ -86,7 +91,15 @@ extension ServiceManager : URLConvertible{
     
     
     func photoUrl() throws -> URL {
-        let urlString =  BASE_URL
+        
+        var urlString =  ""
+        
+        switch self.urlType {
+        case .list:
+            urlString = BASE_URL
+        case .detail:
+            urlString = BASE_URL + "/"
+        }
         guard let url = URL(string: urlString) else {
             throw ErrorTypes.badUrl
         }

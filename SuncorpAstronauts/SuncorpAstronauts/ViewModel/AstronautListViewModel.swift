@@ -9,7 +9,7 @@ import Foundation
 
 
 protocol ListReceivable {
-    func fetchData(for : AstonautEnum )
+    func fetchData()
 }
 
 
@@ -31,7 +31,7 @@ class AstronautListViewModel : ListReceivable{
     }
     
     
-    func fetchData(for : AstonautEnum ) {
+    func fetchData() {
         displayer?.updateView(with: state)
         
         DispatchQueue.global().async {
