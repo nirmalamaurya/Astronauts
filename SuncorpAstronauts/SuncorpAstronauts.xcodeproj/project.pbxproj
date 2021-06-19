@@ -3,10 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		553E7987C1E77CE2320FB566 /* Pods_SuncorpAstronautsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 694EEB1670D04B4904C296FF /* Pods_SuncorpAstronautsTests.framework */; };
+		580C8A13267CA80E0017256C /* ResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580C8A12267CA80E0017256C /* ResponseData.swift */; };
+		580C8A15267CE7480017256C /* ViewDisplayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580C8A14267CE7480017256C /* ViewDisplayer.swift */; };
+		580C8A17267DCAB80017256C /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580C8A16267DCAB80017256C /* ProgressView.swift */; };
+		580C8A19267DE88B0017256C /* Astronaut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580C8A18267DE88A0017256C /* Astronaut.swift */; };
+		58C323E02679F36A000ED4A2 /* AstronautListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C323DF2679F36A000ED4A2 /* AstronautListViewModel.swift */; };
+		58C323E22679F3F2000ED4A2 /* AstronautListAdaptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C323E12679F3F2000ED4A2 /* AstronautListAdaptor.swift */; };
+		58C323E4267ACD29000ED4A2 /* ConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C323E3267ACD29000ED4A2 /* ConnectionManager.swift */; };
 		58EA61D12672061000FAF3CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EA61D02672061000FAF3CE /* AppDelegate.swift */; };
 		58EA61D32672061000FAF3CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EA61D22672061000FAF3CE /* SceneDelegate.swift */; };
 		58EA61D52672061000FAF3CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EA61D42672061000FAF3CE /* ViewController.swift */; };
@@ -17,6 +25,8 @@
 		58EA61F32672061300FAF3CE /* SuncorpAstronautsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EA61F22672061300FAF3CE /* SuncorpAstronautsUITests.swift */; };
 		58EA620226720B5500FAF3CE /* AstronautCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EA620126720B5500FAF3CE /* AstronautCell.swift */; };
 		58EA62052672155D00FAF3CE /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EA62042672155C00FAF3CE /* ServiceManager.swift */; };
+		EFEC99F1C60BA5B0189C0BFA /* Pods_SuncorpAstronauts_SuncorpAstronautsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21590C5083778164C4084681 /* Pods_SuncorpAstronauts_SuncorpAstronautsUITests.framework */; };
+		FB430C6827412A43D3128CC6 /* Pods_SuncorpAstronauts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0F4D36D74A8E63325AE395C /* Pods_SuncorpAstronauts.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +47,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		090C4D777622475DE4E5B5A6 /* Pods-SuncorpAstronauts-SuncorpAstronautsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuncorpAstronauts-SuncorpAstronautsUITests.release.xcconfig"; path = "Target Support Files/Pods-SuncorpAstronauts-SuncorpAstronautsUITests/Pods-SuncorpAstronauts-SuncorpAstronautsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		0C1BC3C8CBAFD38929109B38 /* Pods-SuncorpAstronautsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuncorpAstronautsTests.release.xcconfig"; path = "Target Support Files/Pods-SuncorpAstronautsTests/Pods-SuncorpAstronautsTests.release.xcconfig"; sourceTree = "<group>"; };
+		21590C5083778164C4084681 /* Pods_SuncorpAstronauts_SuncorpAstronautsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SuncorpAstronauts_SuncorpAstronautsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		580C8A12267CA80E0017256C /* ResponseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseData.swift; sourceTree = "<group>"; };
+		580C8A14267CE7480017256C /* ViewDisplayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewDisplayer.swift; sourceTree = "<group>"; };
+		580C8A16267DCAB80017256C /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
+		580C8A18267DE88A0017256C /* Astronaut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Astronaut.swift; sourceTree = "<group>"; };
+		58C323DF2679F36A000ED4A2 /* AstronautListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronautListViewModel.swift; sourceTree = "<group>"; };
+		58C323E12679F3F2000ED4A2 /* AstronautListAdaptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronautListAdaptor.swift; sourceTree = "<group>"; };
+		58C323E3267ACD29000ED4A2 /* ConnectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionManager.swift; sourceTree = "<group>"; };
 		58EA61CD2672061000FAF3CE /* SuncorpAstronauts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuncorpAstronauts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58EA61D02672061000FAF3CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		58EA61D22672061000FAF3CE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +73,12 @@
 		58EA61F42672061300FAF3CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		58EA620126720B5500FAF3CE /* AstronautCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronautCell.swift; sourceTree = "<group>"; };
 		58EA62042672155C00FAF3CE /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
+		694EEB1670D04B4904C296FF /* Pods_SuncorpAstronautsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SuncorpAstronautsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F790CA173D23694513F3FBD /* Pods-SuncorpAstronautsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuncorpAstronautsTests.debug.xcconfig"; path = "Target Support Files/Pods-SuncorpAstronautsTests/Pods-SuncorpAstronautsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AF0B790B6DBD198D59A96B1F /* Pods-SuncorpAstronauts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuncorpAstronauts.release.xcconfig"; path = "Target Support Files/Pods-SuncorpAstronauts/Pods-SuncorpAstronauts.release.xcconfig"; sourceTree = "<group>"; };
+		D0F4D36D74A8E63325AE395C /* Pods_SuncorpAstronauts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SuncorpAstronauts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0801D91CC3DA5887C4CFA81 /* Pods-SuncorpAstronauts-SuncorpAstronautsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuncorpAstronauts-SuncorpAstronautsUITests.debug.xcconfig"; path = "Target Support Files/Pods-SuncorpAstronauts-SuncorpAstronautsUITests/Pods-SuncorpAstronauts-SuncorpAstronautsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FD80BA3E38694838B34F56C1 /* Pods-SuncorpAstronauts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuncorpAstronauts.debug.xcconfig"; path = "Target Support Files/Pods-SuncorpAstronauts/Pods-SuncorpAstronauts.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB430C6827412A43D3128CC6 /* Pods_SuncorpAstronauts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				553E7987C1E77CE2320FB566 /* Pods_SuncorpAstronautsTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,12 +102,115 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFEC99F1C60BA5B0189C0BFA /* Pods_SuncorpAstronauts_SuncorpAstronautsUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0910F28192451AE1F3E684AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D0F4D36D74A8E63325AE395C /* Pods_SuncorpAstronauts.framework */,
+				21590C5083778164C4084681 /* Pods_SuncorpAstronauts_SuncorpAstronautsUITests.framework */,
+				694EEB1670D04B4904C296FF /* Pods_SuncorpAstronautsTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		580C8A11267CA7F30017256C /* ResponseData */ = {
+			isa = PBXGroup;
+			children = (
+				580C8A12267CA80E0017256C /* ResponseData.swift */,
+				580C8A18267DE88A0017256C /* Astronaut.swift */,
+			);
+			path = ResponseData;
+			sourceTree = "<group>";
+		};
+		580C8A1A267DEB950017256C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				580C8A11267CA7F30017256C /* ResponseData */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		580C8A1B267DEBA40017256C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				580C8A14267CE7480017256C /* ViewDisplayer.swift */,
+				58C323DF2679F36A000ED4A2 /* AstronautListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		580C8A1C267DEBBB0017256C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				580C8A1F267DEBEF0017256C /* Stroyboard */,
+				580C8A1E267DEBDD0017256C /* ErrorView */,
+				580C8A1D267DEBCE0017256C /* ProgressView */,
+				58EA620026720B1800FAF3CE /* CustomCells */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		580C8A1D267DEBCE0017256C /* ProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				580C8A16267DCAB80017256C /* ProgressView.swift */,
+			);
+			path = ProgressView;
+			sourceTree = "<group>";
+		};
+		580C8A1E267DEBDD0017256C /* ErrorView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ErrorView;
+			sourceTree = "<group>";
+		};
+		580C8A1F267DEBEF0017256C /* Stroyboard */ = {
+			isa = PBXGroup;
+			children = (
+				58EA61DB2672061200FAF3CE /* LaunchScreen.storyboard */,
+				58EA61D62672061000FAF3CE /* Main.storyboard */,
+			);
+			path = Stroyboard;
+			sourceTree = "<group>";
+		};
+		580C8A20267DEC490017256C /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				58EA62032672152400FAF3CE /* ServiceAPI */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		580C8A21267DEC990017256C /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				58EA61D42672061000FAF3CE /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		580C8A22267DECB30017256C /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				58EA61D02672061000FAF3CE /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		580C8A23267DECD90017256C /* SceneDelegate */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SceneDelegate;
+			sourceTree = "<group>";
+		};
 		58EA61C42672061000FAF3CE = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +218,8 @@
 				58EA61E62672061300FAF3CE /* SuncorpAstronautsTests */,
 				58EA61F12672061300FAF3CE /* SuncorpAstronautsUITests */,
 				58EA61CE2672061000FAF3CE /* Products */,
+				82C98B29ED045301F082C102 /* Pods */,
+				0910F28192451AE1F3E684AD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,14 +236,15 @@
 		58EA61CF2672061000FAF3CE /* SuncorpAstronauts */ = {
 			isa = PBXGroup;
 			children = (
-				58EA62032672152400FAF3CE /* ServiceManager */,
-				58EA620026720B1800FAF3CE /* CustomCells */,
-				58EA61D02672061000FAF3CE /* AppDelegate.swift */,
 				58EA61D22672061000FAF3CE /* SceneDelegate.swift */,
-				58EA61D42672061000FAF3CE /* ViewController.swift */,
-				58EA61D62672061000FAF3CE /* Main.storyboard */,
+				580C8A23267DECD90017256C /* SceneDelegate */,
+				580C8A22267DECB30017256C /* AppDelegate */,
+				580C8A21267DEC990017256C /* ViewController */,
+				580C8A1A267DEB950017256C /* Model */,
+				580C8A1C267DEBBB0017256C /* View */,
+				580C8A1B267DEBA40017256C /* ViewModel */,
+				580C8A20267DEC490017256C /* Utility */,
 				58EA61D92672061200FAF3CE /* Assets.xcassets */,
-				58EA61DB2672061200FAF3CE /* LaunchScreen.storyboard */,
 				58EA61DE2672061200FAF3CE /* Info.plist */,
 			);
 			path = SuncorpAstronauts;
@@ -142,12 +276,27 @@
 			path = CustomCells;
 			sourceTree = "<group>";
 		};
-		58EA62032672152400FAF3CE /* ServiceManager */ = {
+		58EA62032672152400FAF3CE /* ServiceAPI */ = {
 			isa = PBXGroup;
 			children = (
 				58EA62042672155C00FAF3CE /* ServiceManager.swift */,
+				58C323E3267ACD29000ED4A2 /* ConnectionManager.swift */,
+				58C323E12679F3F2000ED4A2 /* AstronautListAdaptor.swift */,
 			);
-			path = ServiceManager;
+			path = ServiceAPI;
+			sourceTree = "<group>";
+		};
+		82C98B29ED045301F082C102 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FD80BA3E38694838B34F56C1 /* Pods-SuncorpAstronauts.debug.xcconfig */,
+				AF0B790B6DBD198D59A96B1F /* Pods-SuncorpAstronauts.release.xcconfig */,
+				F0801D91CC3DA5887C4CFA81 /* Pods-SuncorpAstronauts-SuncorpAstronautsUITests.debug.xcconfig */,
+				090C4D777622475DE4E5B5A6 /* Pods-SuncorpAstronauts-SuncorpAstronautsUITests.release.xcconfig */,
+				9F790CA173D23694513F3FBD /* Pods-SuncorpAstronautsTests.debug.xcconfig */,
+				0C1BC3C8CBAFD38929109B38 /* Pods-SuncorpAstronautsTests.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,9 +306,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 58EA61F72672061300FAF3CE /* Build configuration list for PBXNativeTarget "SuncorpAstronauts" */;
 			buildPhases = (
+				16F271BC3417B7B95F7FCFAA /* [CP] Check Pods Manifest.lock */,
 				58EA61C92672061000FAF3CE /* Sources */,
 				58EA61CA2672061000FAF3CE /* Frameworks */,
 				58EA61CB2672061000FAF3CE /* Resources */,
+				C7B3533A438C509C760E4E67 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -174,6 +325,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 58EA61FA2672061300FAF3CE /* Build configuration list for PBXNativeTarget "SuncorpAstronautsTests" */;
 			buildPhases = (
+				AA75E19CC0FA7D65E6565CB2 /* [CP] Check Pods Manifest.lock */,
 				58EA61DF2672061300FAF3CE /* Sources */,
 				58EA61E02672061300FAF3CE /* Frameworks */,
 				58EA61E12672061300FAF3CE /* Resources */,
@@ -192,9 +344,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 58EA61FD2672061300FAF3CE /* Build configuration list for PBXNativeTarget "SuncorpAstronautsUITests" */;
 			buildPhases = (
+				5FD18F0CD66A0C78E82FBD8A /* [CP] Check Pods Manifest.lock */,
 				58EA61EA2672061300FAF3CE /* Sources */,
 				58EA61EB2672061300FAF3CE /* Frameworks */,
 				58EA61EC2672061300FAF3CE /* Resources */,
+				E5B0FE6B5694DF83E3DBC17E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -275,6 +429,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		16F271BC3417B7B95F7FCFAA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SuncorpAstronauts-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5FD18F0CD66A0C78E82FBD8A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SuncorpAstronauts-SuncorpAstronautsUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA75E19CC0FA7D65E6565CB2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SuncorpAstronautsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7B3533A438C509C760E4E67 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SuncorpAstronauts/Pods-SuncorpAstronauts-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SuncorpAstronauts/Pods-SuncorpAstronauts-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SuncorpAstronauts/Pods-SuncorpAstronauts-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5B0FE6B5694DF83E3DBC17E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SuncorpAstronauts-SuncorpAstronautsUITests/Pods-SuncorpAstronauts-SuncorpAstronautsUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SuncorpAstronauts-SuncorpAstronautsUITests/Pods-SuncorpAstronauts-SuncorpAstronautsUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SuncorpAstronauts-SuncorpAstronautsUITests/Pods-SuncorpAstronauts-SuncorpAstronautsUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		58EA61C92672061000FAF3CE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -282,9 +539,16 @@
 			files = (
 				58EA61D52672061000FAF3CE /* ViewController.swift in Sources */,
 				58EA61D12672061000FAF3CE /* AppDelegate.swift in Sources */,
+				58C323E02679F36A000ED4A2 /* AstronautListViewModel.swift in Sources */,
+				580C8A19267DE88B0017256C /* Astronaut.swift in Sources */,
 				58EA61D32672061000FAF3CE /* SceneDelegate.swift in Sources */,
+				580C8A15267CE7480017256C /* ViewDisplayer.swift in Sources */,
+				580C8A13267CA80E0017256C /* ResponseData.swift in Sources */,
 				58EA620226720B5500FAF3CE /* AstronautCell.swift in Sources */,
+				58C323E4267ACD29000ED4A2 /* ConnectionManager.swift in Sources */,
+				58C323E22679F3F2000ED4A2 /* AstronautListAdaptor.swift in Sources */,
 				58EA62052672155D00FAF3CE /* ServiceManager.swift in Sources */,
+				580C8A17267DCAB80017256C /* ProgressView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,6 +721,7 @@
 		};
 		58EA61F82672061300FAF3CE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD80BA3E38694838B34F56C1 /* Pods-SuncorpAstronauts.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -475,6 +740,7 @@
 		};
 		58EA61F92672061300FAF3CE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF0B790B6DBD198D59A96B1F /* Pods-SuncorpAstronauts.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -493,6 +759,7 @@
 		};
 		58EA61FB2672061300FAF3CE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F790CA173D23694513F3FBD /* Pods-SuncorpAstronautsTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -514,6 +781,7 @@
 		};
 		58EA61FC2672061300FAF3CE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C1BC3C8CBAFD38929109B38 /* Pods-SuncorpAstronautsTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -535,6 +803,7 @@
 		};
 		58EA61FE2672061300FAF3CE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0801D91CC3DA5887C4CFA81 /* Pods-SuncorpAstronauts-SuncorpAstronautsUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -554,6 +823,7 @@
 		};
 		58EA61FF2672061300FAF3CE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 090C4D777622475DE4E5B5A6 /* Pods-SuncorpAstronauts-SuncorpAstronautsUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

@@ -8,6 +8,7 @@
 import XCTest
 @testable import SuncorpAstronauts
 
+
 class SuncorpAstronautsTests: XCTestCase {
 
     override func setUpWithError() throws {
@@ -19,6 +20,12 @@ class SuncorpAstronautsTests: XCTestCase {
     }
 
     func testExample() throws {
+        
+      let k =   SessionManager1 ()
+    
+        
+        XCTAssertEqual(k., <#T##expression2: Equatable##Equatable#>)
+       
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
