@@ -10,19 +10,18 @@ import Foundation
 
 extension Astronaut {
     func makeImageUrl() -> URL? {
-        let urlString:String = profile_image_thumbnail ?? ""
-        return URL(string: urlString)
+        return URL(string: profile_image_thumbnail)
     }
 }
 
 struct Astronaut : Codable {
     
-    let id : Int?
-    let name : String?
-    let nationality : String?
-    let profile_image_thumbnail :String?
-    let bio :String?
-    let date_of_birth : String?
+    let id : Int
+    let name : String
+    let nationality : String
+    let profile_image_thumbnail :String
+    let bio :String
+    let date_of_birth : String
     
     /** As of now, this data is not being used, hence commented */
     /*

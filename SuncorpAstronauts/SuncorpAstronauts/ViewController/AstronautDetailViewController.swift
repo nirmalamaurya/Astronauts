@@ -22,10 +22,13 @@ class AstronautDetailViewController: UIViewController {
     private var displayer : ViewDisplayer!
     var astronautId : Int?
 
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+       
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         setupProgressView()
         setupErrorView()
         setUpViewModel()
@@ -93,11 +96,10 @@ extension AstronautDetailViewController : ViewDisplayer{
 
         progressView.isHidden = true
         
-        
         guard let astronaut =  try? JSONDecoder().decode(Astronaut.self, from: data) else{
             return
     }
-        astronautName.text = astronaut.name
+        astronautName.text =  astronaut.name
         astronautNationality.text = astronaut.nationality
         astronautDOB.text = astronaut.bio
         astronautBio.text = astronaut.date_of_birth
