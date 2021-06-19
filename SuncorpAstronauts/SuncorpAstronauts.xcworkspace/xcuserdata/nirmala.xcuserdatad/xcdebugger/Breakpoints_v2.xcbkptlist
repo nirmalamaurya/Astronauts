@@ -7,16 +7,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "74DA2CE3-6EA9-43AB-8959-37393E330CF3"
+            uuid = "65A00A1D-7017-4EE4-86B6-035E4E3616F7"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "SuncorpAstronauts/Utility/ServiceAPI/ServiceManager.swift"
+            filePath = "SuncorpAstronauts/ViewController/AstronautDetailViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "99"
-            endingLineNumber = "99"
-            landmarkName = "photoUrl()"
+            startingLineNumber = "97"
+            endingLineNumber = "97"
+            landmarkName = "updateView(with:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

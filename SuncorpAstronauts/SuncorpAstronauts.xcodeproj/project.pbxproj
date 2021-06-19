@@ -12,12 +12,15 @@
 		580C8A15267CE7480017256C /* ViewDisplayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580C8A14267CE7480017256C /* ViewDisplayer.swift */; };
 		580C8A17267DCAB80017256C /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580C8A16267DCAB80017256C /* ProgressView.swift */; };
 		580C8A19267DE88B0017256C /* Astronaut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580C8A18267DE88A0017256C /* Astronaut.swift */; };
-		58C323E02679F36A000ED4A2 /* AstronautListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C323DF2679F36A000ED4A2 /* AstronautListViewModel.swift */; };
+		580C8A27267DF6130017256C /* AstronautDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580C8A26267DF6130017256C /* AstronautDetailViewController.swift */; };
+		580C8A29267E347B0017256C /* AstronautDetailAdaptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580C8A28267E347B0017256C /* AstronautDetailAdaptor.swift */; };
+		580C8A2B267E3E3F0017256C /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580C8A2A267E3E3F0017256C /* ErrorView.swift */; };
+		58C323E02679F36A000ED4A2 /* AstronautViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C323DF2679F36A000ED4A2 /* AstronautViewModel.swift */; };
 		58C323E22679F3F2000ED4A2 /* AstronautListAdaptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C323E12679F3F2000ED4A2 /* AstronautListAdaptor.swift */; };
 		58C323E4267ACD29000ED4A2 /* ConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C323E3267ACD29000ED4A2 /* ConnectionManager.swift */; };
 		58EA61D12672061000FAF3CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EA61D02672061000FAF3CE /* AppDelegate.swift */; };
 		58EA61D32672061000FAF3CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EA61D22672061000FAF3CE /* SceneDelegate.swift */; };
-		58EA61D52672061000FAF3CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EA61D42672061000FAF3CE /* ViewController.swift */; };
+		58EA61D52672061000FAF3CE /* AstronautListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EA61D42672061000FAF3CE /* AstronautListViewController.swift */; };
 		58EA61D82672061000FAF3CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58EA61D62672061000FAF3CE /* Main.storyboard */; };
 		58EA61DA2672061200FAF3CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58EA61D92672061200FAF3CE /* Assets.xcassets */; };
 		58EA61DD2672061200FAF3CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58EA61DB2672061200FAF3CE /* LaunchScreen.storyboard */; };
@@ -54,13 +57,16 @@
 		580C8A14267CE7480017256C /* ViewDisplayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewDisplayer.swift; sourceTree = "<group>"; };
 		580C8A16267DCAB80017256C /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
 		580C8A18267DE88A0017256C /* Astronaut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Astronaut.swift; sourceTree = "<group>"; };
-		58C323DF2679F36A000ED4A2 /* AstronautListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronautListViewModel.swift; sourceTree = "<group>"; };
+		580C8A26267DF6130017256C /* AstronautDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronautDetailViewController.swift; sourceTree = "<group>"; };
+		580C8A28267E347B0017256C /* AstronautDetailAdaptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronautDetailAdaptor.swift; sourceTree = "<group>"; };
+		580C8A2A267E3E3F0017256C /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		58C323DF2679F36A000ED4A2 /* AstronautViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronautViewModel.swift; sourceTree = "<group>"; };
 		58C323E12679F3F2000ED4A2 /* AstronautListAdaptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronautListAdaptor.swift; sourceTree = "<group>"; };
 		58C323E3267ACD29000ED4A2 /* ConnectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionManager.swift; sourceTree = "<group>"; };
 		58EA61CD2672061000FAF3CE /* SuncorpAstronauts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuncorpAstronauts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58EA61D02672061000FAF3CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		58EA61D22672061000FAF3CE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		58EA61D42672061000FAF3CE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		58EA61D42672061000FAF3CE /* AstronautListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronautListViewController.swift; sourceTree = "<group>"; };
 		58EA61D72672061000FAF3CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		58EA61D92672061200FAF3CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		58EA61DC2672061200FAF3CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -140,7 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				580C8A14267CE7480017256C /* ViewDisplayer.swift */,
-				58C323DF2679F36A000ED4A2 /* AstronautListViewModel.swift */,
+				58C323DF2679F36A000ED4A2 /* AstronautViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -148,6 +154,8 @@
 		580C8A1C267DEBBB0017256C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				58C323E12679F3F2000ED4A2 /* AstronautListAdaptor.swift */,
+				580C8A28267E347B0017256C /* AstronautDetailAdaptor.swift */,
 				580C8A1F267DEBEF0017256C /* Stroyboard */,
 				580C8A1E267DEBDD0017256C /* ErrorView */,
 				580C8A1D267DEBCE0017256C /* ProgressView */,
@@ -167,6 +175,7 @@
 		580C8A1E267DEBDD0017256C /* ErrorView */ = {
 			isa = PBXGroup;
 			children = (
+				580C8A2A267E3E3F0017256C /* ErrorView.swift */,
 			);
 			path = ErrorView;
 			sourceTree = "<group>";
@@ -191,7 +200,8 @@
 		580C8A21267DEC990017256C /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				58EA61D42672061000FAF3CE /* ViewController.swift */,
+				58EA61D42672061000FAF3CE /* AstronautListViewController.swift */,
+				580C8A26267DF6130017256C /* AstronautDetailViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -281,7 +291,6 @@
 			children = (
 				58EA62042672155C00FAF3CE /* ServiceManager.swift */,
 				58C323E3267ACD29000ED4A2 /* ConnectionManager.swift */,
-				58C323E12679F3F2000ED4A2 /* AstronautListAdaptor.swift */,
 			);
 			path = ServiceAPI;
 			sourceTree = "<group>";
@@ -537,16 +546,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				58EA61D52672061000FAF3CE /* ViewController.swift in Sources */,
+				58EA61D52672061000FAF3CE /* AstronautListViewController.swift in Sources */,
 				58EA61D12672061000FAF3CE /* AppDelegate.swift in Sources */,
-				58C323E02679F36A000ED4A2 /* AstronautListViewModel.swift in Sources */,
+				58C323E02679F36A000ED4A2 /* AstronautViewModel.swift in Sources */,
 				580C8A19267DE88B0017256C /* Astronaut.swift in Sources */,
+				580C8A29267E347B0017256C /* AstronautDetailAdaptor.swift in Sources */,
 				58EA61D32672061000FAF3CE /* SceneDelegate.swift in Sources */,
 				580C8A15267CE7480017256C /* ViewDisplayer.swift in Sources */,
 				580C8A13267CA80E0017256C /* ResponseData.swift in Sources */,
 				58EA620226720B5500FAF3CE /* AstronautCell.swift in Sources */,
 				58C323E4267ACD29000ED4A2 /* ConnectionManager.swift in Sources */,
+				580C8A2B267E3E3F0017256C /* ErrorView.swift in Sources */,
 				58C323E22679F3F2000ED4A2 /* AstronautListAdaptor.swift in Sources */,
+				580C8A27267DF6130017256C /* AstronautDetailViewController.swift in Sources */,
 				58EA62052672155D00FAF3CE /* ServiceManager.swift in Sources */,
 				580C8A17267DCAB80017256C /* ProgressView.swift in Sources */,
 			);

@@ -7,9 +7,11 @@
 
 import Foundation
 
-/**
- 
- Although we are not using these data, but created structure for later use
+
+
+/** As of now, this data is not being used, hence commented */
+/*
+
  
 struct Status: Codable {
     

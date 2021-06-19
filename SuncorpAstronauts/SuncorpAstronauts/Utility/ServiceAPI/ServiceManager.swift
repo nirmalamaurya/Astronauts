@@ -22,21 +22,23 @@ typealias errorHandler = (ErrorTypes)->()
 
 protocol RequestHandler {
     
-    func getAstronauts( successHandler : @escaping successHandler, errorHandler : @escaping errorHandler )
+    func getAstronauts( successHandler : @escaping (Data)->(), errorHandler : @escaping errorHandler )
 }
 
 enum AstronautUrlType: String {
-    case list = ""
-    case detail = "id"
+    case list
+    case detail
 }
 
 struct ServiceManager : ConnectionProvider, RequestHandler {
     
     let urlType : AstronautUrlType
+    let endPoint : String?
     
-    init(urlType: AstronautUrlType){
+    init(urlType: AstronautUrlType, endPoint : String){
         self.urlType = urlType
-         }
+        self.endPoint = endPoint
+    }
     
     var neworkAvailable : Bool{
         get{
@@ -44,12 +46,12 @@ struct ServiceManager : ConnectionProvider, RequestHandler {
         }
     }
     
-    func getAstronauts( successHandler: @escaping successHandler, errorHandler: @escaping errorHandler) {
+    func getAstronauts( successHandler: @escaping (Data)->(), errorHandler: @escaping errorHandler) {
         
         if neworkAvailable {
             
-            fetchDataFromAPI { results in
-                successHandler(results)
+            fetchDataFromAPI { data in
+                successHandler(data)
             } errorHandler: { error in
                 errorHandler(.badUrl)
             }
@@ -59,9 +61,12 @@ struct ServiceManager : ConnectionProvider, RequestHandler {
         }
     }
     
-    private func fetchDataFromAPI (successHandler: @escaping successHandler,
+    private func fetchDataFromAPI (successHandler: @escaping (Data)->(),
                                    errorHandler: @escaping errorHandler) {
         
+        /**
+         Using third party API Alamofire to reduce code managent like, Checking Network Checking and  to mange URL
+         */
         do{
             AF.request(try asURL()).responseData {  responseData in
                 
@@ -69,11 +74,7 @@ struct ServiceManager : ConnectionProvider, RequestHandler {
                     errorHandler(.invalidResponse)
                     return
                 }
-                if let response:ResponseData = try? JSONDecoder().decode(ResponseData.self, from: data)  {
-                    successHandler(response.results)
-                
-            }else{
-                }
+                successHandler(data)
             }
         }
         catch{
@@ -89,22 +90,24 @@ extension ServiceManager : URLConvertible{
         return try photoUrl()
     }
     
-    
     func photoUrl() throws -> URL {
         
         var urlString =  ""
+        
+        /** Here at this point, switch statement is not very useful
+         urlString =  BASE_URL + endPoint!
+         will also provide desired output, but when app will grow, below code will be helpful.
+         */
         
         switch self.urlType {
         case .list:
             urlString = BASE_URL
         case .detail:
-            urlString = BASE_URL + "/"
+            urlString = BASE_URL + endPoint!
         }
         guard let url = URL(string: urlString) else {
             throw ErrorTypes.badUrl
         }
-        
-        
         return url
     }
     

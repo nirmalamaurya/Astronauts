@@ -13,16 +13,12 @@ protocol ListReceivable {
 }
 
 
-enum ViewState{
-    
-    case preseting
-}
-
-class AstronautListViewModel : ListReceivable{
+class AstronautViewModel : ListReceivable{
     
     let requestHandler : RequestHandler
-    let displayer: ViewDisplayer?
+    var displayer: ViewDisplayer?
     let state: ViewState
+    
     
     init(displayer : ViewDisplayer,requestHandler : RequestHandler, state: ViewState = .preseting){
         self.displayer = displayer
@@ -30,22 +26,23 @@ class AstronautListViewModel : ListReceivable{
         self.state = state
     }
     
-    
     func fetchData() {
         displayer?.updateView(with: state)
-        
+
         DispatchQueue.global().async {
-            self.requestHandler.getAstronauts { astronaut in
-                DispatchQueue.main.async {
-                    
-                    self.displayer?.updateView(with: astronaut)
-                }
+            
+            self.requestHandler.getAstronauts { data in
+                self.displayer?.updateView(with: data)
+                
             } errorHandler: { error in
                 DispatchQueue.main.async {
                     self.displayer?.updateView(with: error)
-                    
+
                 }
             }
         }
+    }
+    deinit {
+        self.displayer = nil
     }
 }

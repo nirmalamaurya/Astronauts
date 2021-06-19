@@ -17,13 +17,16 @@ extension Astronaut {
 
 struct Astronaut : Codable {
     
+    let id : Int?
     let name : String?
     let nationality : String?
     let profile_image_thumbnail :String?
+    let bio :String?
+    let date_of_birth : String?
     
     /** As of now, this data is not being used, hence commented */
     /*
-    let id : Int?
+   
     let url : String?
     let status :[Status]?
     let type : [Status]?
