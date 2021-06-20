@@ -1,1 +1,1 @@
-# SuncoprAstronauts
+# Astronauts
