@@ -15,8 +15,8 @@ class AstronautDetailViewController: UIViewController {
     @IBOutlet var astronautNationality : UILabel!
     @IBOutlet var astronautBio: UILabel!
     @IBOutlet var astronautDOB : UILabel!
-     var progressView : ProgressView!
-     var errorView : ErrorView!
+    private var progressView : ProgressView!
+    private var errorView : ErrorView!
 
     private var astronautViewModel : AstronautViewModel!
     private var displayer : ViewDisplayer!
