@@ -8,13 +8,13 @@
 import UIKit
 
 
-class AstronautListViewController: UIViewController {
+class AstronautListViewController: UIViewController{
     
     
     @IBOutlet var tableView : UITableView!
+    var progressView : ProgressView!
+    var errorView : ErrorView!
     private var astronautViewModel:AstronautViewModel!
-    private var progressView : ProgressView!
-    private var errorView : ErrorView!
     private var astronautListAdaptor : AstronautListViewAdaptor! = nil
     
     override func viewDidLoad() {
@@ -26,13 +26,24 @@ class AstronautListViewController: UIViewController {
     
     func setUpViewModel(){
         
-        self.astronautListAdaptor = AstronautListViewAdaptor()
+        self.astronautListAdaptor = AstronautListViewAdaptor(delegate: self)
         tableView.dataSource = self.astronautListAdaptor
-        self.astronautListAdaptor.delegate = self
         tableView.delegate = self.astronautListAdaptor
-        astronautViewModel = AstronautViewModel(displayer: self, requestHandler:  ServiceManager(urlType: .list, endPoint: ""))
+        astronautViewModel = AstronautViewModel(displayer:  self.astronautListAdaptor, requestHandler:  ServiceManager(urlType: .list, endPoint: ""))
         astronautViewModel.fetchData()
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if let segue = segue.destination as? AstronautDetailViewController{
+            if let id = sender as? Int{
+                segue.astronautId = id
+            }
+        }
+    }
+}
+
+extension AstronautListViewController{
     
     func setupProgressView() {
         progressView = ProgressView(frame: self.view.frame)
@@ -61,54 +72,7 @@ class AstronautListViewController: UIViewController {
         let trailingConstraint = errorView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
         let upConstraint = errorView.topAnchor.constraint(equalTo: view.topAnchor)
         let bottomConstraint = errorView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
-
         view.addConstraints([leadingConstraint, trailingConstraint, upConstraint, bottomConstraint])
     }
     
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        if let segue = segue.destination as? AstronautDetailViewController{
-            if let id = sender as? Int{
-                segue.astronautId = id
-            }
-        }
-    }
 }
-
-
-extension AstronautListViewController : ViewDisplayer{
-    
-    func updateView(with error: Error) {
-        
-        print("updateView With Error")
-        self.progressView.isHidden = true
-        self.errorView.isHidden = false
-        self.tableView.isHidden = true
-
-        self.view.bringSubviewToFront(self.errorView)
-    }
-    
-    func updateView(with data: Data) {
-        
-        guard let astronautData =  try? JSONDecoder().decode(ResponseData.self, from: data) else{
-            return
-    }
-        self.astronautListAdaptor.updateRecord(with: astronautData.results)
-        DispatchQueue.main.async {
-            self.tableView.reloadData()
-            self.tableView.isHidden = false
-            self.progressView.isHidden = true
-            self.view.bringSubviewToFront(self.tableView)
-        }
-    }
-    
-    func updateView(with dataState: ViewState) {
-        tableView.isHidden = true
-        progressView.isHidden = false
-        self.view.bringSubviewToFront(progressView)
-    }
-    
-}
-
-

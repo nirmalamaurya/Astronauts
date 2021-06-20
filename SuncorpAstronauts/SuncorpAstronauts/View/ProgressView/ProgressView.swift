@@ -21,7 +21,7 @@ class ProgressView: UIView {
     
     func setUpView() {
         activityIndicator.translatesAutoresizingMaskIntoConstraints = false
-        activityIndicator.color = #colorLiteral(red: 0.9372549057, green: 0.3490196168, blue: 0.1921568662, alpha: 1)
+        activityIndicator.color = #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)
         activityIndicator.startAnimating()
         activityIndicator.hidesWhenStopped = true
         self.addSubview(activityIndicator)

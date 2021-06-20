@@ -11,7 +11,12 @@ import UIKit
 class AstronautListViewAdaptor :NSObject {
     private var astronauts: [Astronaut] = []
     private let cellIdentifier = "astronautCell"
-     weak var delegate :AstronautListViewController!
+    weak var delegate :AstronautListViewController!
+    
+    init(delegate : AstronautListViewController) {
+        self.delegate = delegate
+    }
+    
     
     func updateRecord(with astronauts: [Astronaut]){
         self.astronauts+=astronauts
@@ -40,7 +45,37 @@ extension AstronautListViewAdaptor : UITableViewDataSource{
     }
 }
 
-
+extension AstronautListViewAdaptor : ViewDisplayer{
+    
+    func updateView(with error: Error) {
+        
+        delegate.progressView.isHidden = true
+        delegate.errorView.isHidden = false
+        delegate.tableView.isHidden = true
+        delegate.view.bringSubviewToFront(delegate.errorView)
+    }
+    
+    func updateView(with data: Data) {
+        
+        guard let astronautData =  try? JSONDecoder().decode(ResponseData.self, from: data) else{
+            return
+    }
+      self.updateRecord(with: astronautData.results)
+        DispatchQueue.main.async {
+            self.delegate.tableView.reloadData()
+            self.delegate.tableView.isHidden = false
+            self.delegate.progressView.isHidden = true
+            self.delegate.view.bringSubviewToFront(self.delegate.tableView)
+        }
+    }
+    
+    func updateView(with dataState: ViewState) {
+        self.delegate.tableView.isHidden = true
+        self.delegate.progressView.isHidden = false
+        self.delegate.view.bringSubviewToFront(self.delegate.progressView)
+    }
+    
+}
 
 
     

@@ -12,7 +12,6 @@ import Foundation
 /** As of now, this data is not being used, hence commented */
 /*
 
- 
 struct Status: Codable {
     
     let id : Int?
